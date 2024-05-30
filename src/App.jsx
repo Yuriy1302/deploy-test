@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route, Outlet, Link} from 'react-router-dom';
 
 import './App.css';
 
+import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import WelcomePage from './WelcomePage';
 
@@ -29,18 +30,18 @@ function App() {
       <div>
         <BrowserRouter>
           <nav style={{ fontSize: '32px' }}>
-            <Link to="/about" style={{ margin: '32px' }}>About</Link>
-            <Link to="/welcome" style={{ margin: '32px' }}>Welcome</Link>
+            <Link to="/" className='mr-3'>Home</Link>
+            <Link to="/about" className='mr-3'>About</Link>
+            <Link to="/welcome">Welcome</Link>
           </nav>
           <hr />
           <div>
             <Routes>
-              <Route path="/" element={<></>} />
+              <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/welcome" element={<WelcomePage />} />
             </Routes>
           </div>
-          
           <div>
             <Outlet />
           </div>

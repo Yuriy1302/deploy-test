@@ -7,7 +7,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mr-3 {
+  margin-right: 30px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+
+.title-page {
+  font-size: 42px;
+  color: #434343;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.text-purple {
+  color: rebeccapurple;
+}
+
+.text-green {
+  color: rgb(48, 167, 95);
+}
+
+.text-orange {
+  color: rgb(225, 135, 46);
+}
+
+
+.content-page {
+  font-size: 26px;
+  color: #434343;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
