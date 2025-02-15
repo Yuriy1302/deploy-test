@@ -5,6 +5,7 @@ import Header from './Header';
 import HomePage from './HomePage';
 import AuthPage from './AuthPage';
 import AboutPage from './AboutPage';
+import ContentPage from './ContentPage';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/authpage" element={<AuthPage />} />
+            <Route path="/content" element={<ContentPage />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
         </div>
