@@ -24,6 +24,7 @@ const ContentPage = () => {
         ? <p className="mt-3">{value.message}</p>
         : <p className="mt-3">Click a button for get data {loader ? <span style={{ color: 'tomato' }}>Loading...</span> : ''}</p>
       }
+      <h1>Rocket 🚀 - checking Cahce</h1>
     </div>
   );
 };
